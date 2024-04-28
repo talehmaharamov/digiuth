@@ -1,0 +1,40 @@
+:root {
+  // nova styles
+  --nti-tag-bgcolor: var(--primary);
+  --nti-tag-mr: 5px;
+  --nti-tag-color: #fff;
+  // plugin styles
+  --ti-valid-bgcolor: var(--primary);
+  --ti-deletion-mark-bgcolor: var(--danger);
+  --ti-selected-item-bgcolor: var(--primary);
+}
+.nti-tags-wrapper {
+  .nti-tag {
+    display: inline-block;
+    background-color: var(--nti-tag-bgcolor);
+    margin-right: var(--nti-tag-mr);
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    color: var(--nti-tag-color);
+    border-radius: 2px;
+  }
+}
+
+/**
+* Plugin styles
+ */
+.ti-tag {
+  &.ti-valid {
+    background-color: var(--ti-valid-bgcolor) !important;
+  }
+  &.ti-deletion-mark {
+    background-color: var(--ti-deletion-mark-bgcolor) !important;
+  }
+}
+.ti-autocomplete {
+  .ti-item {
+    &.ti-selected-item {
+      background-color: var(--ti-selected-item-bgcolor) !important;
+    }
+  }
+}

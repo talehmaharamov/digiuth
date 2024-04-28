@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "hot": "mix watch --hot",
+    "prod": "mix --production",
+    "format": "prettier --write 'resources/**/*.{js,scss,vue}'"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.39",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
